@@ -137,17 +137,17 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Education Details</h5>
-                                    <p class="font-weight-normal">College / University Name : {{session['degree'][0]}}
+                                    <p class="font-weight-normal">College / University Name : {{ session['degree'][0] }}
                                     </p>
-                                    <p class="font-weight-normal">CGPA : {{session['degree'][1]}}</p>
-                                    <p class="font-weight-normal">Field : {{session['degree'][2]}}</p>
-                                    <p class="font-weight-normal">Degree Type : {{session['degree'][3]}}</p>
+                                    <p class="font-weight-normal">CGPA : {{ session['degree'][1] }}</p>
+                                    <p class="font-weight-normal">Field : {{ session['degree'][2] }}</p>
+                                    <p class="font-weight-normal">Degree Type : {{ session['degree'][3] }}</p>
                                     <hr>
-                                    <p class="font-weight-normal">Admission Date : {{session['startdate']}}</p>
+                                    <p class="font-weight-normal">Admission Date : {{ session['startdate'] }}</p>
                                     {%if session['enddate'] == "" %}
                                     <p class="font-weight-normal">Current</p>
                                     {%else%}
-                                    <p class="font-weight-normal">Graduate Date : {{session['enddate']}}</p>
+                                    <p class="font-weight-normal">Graduate Date : {{ session['enddate'] }}</p>
                                     {%endif%}
 
                             </span>
