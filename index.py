@@ -41,7 +41,7 @@ def get_info():
         twitter=request.form.get("twitter")
         blog=request.form.get("blog")
         portfolio=request.form.get("portfolio")
-        degree=request.form.getlist("degree")
+        education=request.form.getlist("education")
         startdate=request.form.get("startdate")
         enddate=request.form.get("enddate")
         company=request.form.getlist("company")
@@ -52,7 +52,7 @@ def get_info():
 
         splitskilldesc=skilldesc[0].split(",")
         splitsdomain=domain[0].split(",")
-        splitdegree=degree[0].split(",")
+        splitdegree=education[0].split(",")
         splitcompany=company[0].split(",")      
 
         # Storing the user data into session for easy access
@@ -72,7 +72,7 @@ def get_info():
         session["twitter"] = twitter
         session["blog"] = blog
         session["portfolio"] = portfolio
-        session["degree"] = splitdegree
+        session["education"] = splitdegree
         session["startdate"] = startdate
         session["enddate"] = enddate
         session["company"] = splitcompany
